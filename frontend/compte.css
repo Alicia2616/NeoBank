@@ -1,0 +1,43 @@
+/* 🌸 Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffebed, #f0c5cb);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 🌸 Conteneur */
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+/* 🌸 Carte du solde */
+.card.text-white.bg-primary {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* 🌸 Liste des transactions et virements */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+/* 🌸 Icônes colorées */
+.text-success {
+    color: #4caf50 !important;
+}
+.text-danger {
+    color: #e91e63 !important;
+}

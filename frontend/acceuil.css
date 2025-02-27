@@ -1,0 +1,47 @@
+/* 🌸 Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffebed, #f0c5cb);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 🌸 Conteneur centré */
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+/* 🌸 Carte du solde */
+.balance-card {
+    background: linear-gradient(135deg, #ff80ab, #ff4081);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* 🌸 Menu en bas */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌸 Style des boutons */
+.bottom-menu .btn {
+    font-size: 18px;
+    flex-grow: 1;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+}
