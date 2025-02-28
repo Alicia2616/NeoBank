@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let confirmationMessage = document.getElementById("confirmationMessage");
 
     passwordResetForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Empêche le rechargement de la page
+        event.preventDefault(); 
 
         let email = document.getElementById("email").value;
 
-        // Simuler l'envoi d'une requête au backend
+       
         fetch("http://localhost:8080/api/auth/forgot-password", {
             method: "POST",
             headers: { "Content-Type": "application/json" },

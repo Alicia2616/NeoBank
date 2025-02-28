@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (response.ok && result.succes) {
                 handleResponse(result.message, "acceuil.html");
-                // Optionnel : Redirection automatique après 3 secondes
+                
                 setTimeout(() => {
                     window.location.href = "acceuil.html";
                 }, 5000);
@@ -55,22 +55,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-    // Redirection vers la page d'inscription
+    
     let registerLink = document.getElementById("registerLink");
     if (registerLink) {
         registerLink.addEventListener("click", function(event) {
-            event.preventDefault(); // Empêche l'ouverture d'un lien vide
-            window.location.href = "formulaireInscription.html"; // Redirige vers la page d'inscription
+            event.preventDefault(); 
+            window.location.href = "formulaireInscription.html"; 
         });
     }
 
     function handleResponse(message, page) {
         
-        // Masque le formulaire et affiche la confirmation
-        form.style.display = "none"; // Cache le formulaire
-        errorMessage.style.display = "none"; // Cache le message d'erreur s'il y en avait
+     
+        form.style.display = "none"; 
+        errorMessage.style.display = "none"; 
     
-        // Création du message de confirmation
         confirmationContainer.classList.add("container", "text-center", "d-flex", "justify-content-center", "align-items-center", "vh-100");
         confirmationContainer.innerHTML = `
             <div class="p-4 shadow-lg bg-white rounded">
@@ -79,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         `;
     
-        // Ajoute la confirmation dans le body
+       
         document.body.appendChild(confirmationContainer);
 
     

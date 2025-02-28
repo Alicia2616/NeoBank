@@ -66,10 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `;
 
-        // Ajoute la confirmation dans le body
+     
         document.body.appendChild(confirmationContainer);
 
-        // Optionnel : Redirection automatique après 3 secondes
+       
         setTimeout(() => {
             window.location.href = "connexion.html";
         }, 8000);

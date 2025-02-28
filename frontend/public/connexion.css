@@ -1,4 +1,4 @@
-/* Styles généraux */
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #ffebed, #f0c5cb);
@@ -9,32 +9,31 @@ body {
     margin: 0;
 }
 
-/* Conteneur principal avec Bootstrap */
+
 .container {
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Ajustement pour mobile */
+    max-width: 400px; 
 }
 
-/* Titre */
+
 h1 {
     color: #e84393;
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Champs de saisie Bootstrap avec icônes */
+
+
 .input-container {
     position: relative;
 }
 
 .input-group-text {
-    background: #f0c5cb; /* Couleur pastel */
-    border: none;
-    color: #6c5ce7;
+    background: #f0c5cb; 
 }
 
 .input-container input {
@@ -43,7 +42,7 @@ h1 {
     font-size: 16px;
 }
 
-/* Bouton de connexion avec Bootstrap */
+
 button {
     width: 100%;
     padding: 10px;
@@ -60,7 +59,7 @@ button:hover {
     background: #ff4757;
 }
 
-/* Lien "Mot de passe oublié ?" */
+
 .forgot-password {
     display: block;
     font-size: 14px;
@@ -73,7 +72,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Texte "Créer un compte" */
+
 .register-text {
     font-size: 14px;
     margin-top: 15px;

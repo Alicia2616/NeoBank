@@ -1,7 +1,7 @@
-/* 🌸 Styles généraux */
+
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ffebed, #f0c5cb); /* Dégradé pastel rose */
+    background: linear-gradient(to right, #ffebed, #f0c5cb); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,14 +9,14 @@ body {
     margin: 0;
 }
 
-/* 🌸 Conteneur principal */
+
 .container {
     max-width: 400px;
     width: 100%;
     margin: auto;
 }
 
-/* 🌸 Carte */
+
 .card {
     background: white;
     padding: 30px;
@@ -24,14 +24,14 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🌸 Titre */
+
 h2, h4 {
-    color: #e84393; /* Rose pastel */
+    color: #e84393; 
     font-weight: bold;
     text-align: center;
 }
 
-/* 🌸 Champs de saisie */
+
 .form-control {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -41,13 +41,12 @@ h2, h4 {
     transition: border 0.3s ease;
 }
 
-/* 🌸 Effet au focus */
+
 .form-control:focus {
     border-color: #e84393;
     box-shadow: 0px 0px 5px rgba(232, 67, 147, 0.2);
 }
 
-/* 🌸 Bouton Envoyer */
 .btn-primary {
     width: 100%;
     padding: 10px;
@@ -65,11 +64,11 @@ h2, h4 {
     background: #ff4757;
 }
 
-/* 🌸 Message de confirmation */
+
 #confirmationMessage {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
     margin-top: 10px;
-    color: #4caf50; /* Vert pour confirmation */
+    color: #4caf50; 
 }

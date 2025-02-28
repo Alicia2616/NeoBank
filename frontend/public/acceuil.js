@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { description: "Virement Envoyé - Alice", montant: "-€200.00", type: "sortie" }
     ];
 
-    // Ajout dynamique des transactions
+    
     transactions.forEach(t => {
         let item = document.createElement("li");
         item.className = "list-group-item d-flex justify-content-between align-items-center";
@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
         transactionList.appendChild(item);
     });
 
-    // Vérification du solde dynamique (exemple)
+    
     let totalSolde = transactions.reduce((acc, t) => {
         let montant = parseFloat(t.montant.replace("€", "").replace(",", "."));
         return t.type === "entrée" ? acc + montant : acc - montant;
-    }, 5000); // Solde initial (modifiable)
+    }, 5000); 
 
     solde.textContent = `€${totalSolde.toFixed(2)}`;
 });

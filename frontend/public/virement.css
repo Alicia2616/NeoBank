@@ -1,4 +1,4 @@
-/* 🌸 Styles généraux */
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #ffebed, #f0c5cb);
@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-/* 🌸 Conteneur principal */
+
 .container {
     background: white;
     padding: 30px;
@@ -19,7 +19,7 @@ body {
     max-width: 400px;
 }
 
-/* 🌸 Titre */
+
 h2 {
     color: #e84393;
     font-size: 22px;
@@ -27,12 +27,12 @@ h2 {
     text-align: center;
 }
 
-/* 🌸 Champs de saisie Bootstrap avec icônes */
+
 .input-container {
     position: relative;
 }
 
-/* 🌸 Style des champs */
+
 .form-control {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -42,20 +42,19 @@ h2 {
     transition: border 0.3s ease;
 }
 
-/* 🌸 Effet au focus */
+
 .form-control:focus {
     border-color: #e84393;
     box-shadow: 0px 0px 5px rgba(232, 67, 147, 0.2);
 }
 
-/* 🌸 Icônes Bootstrap */
+
 .input-group-text {
     background: #f0c5cb;
     border: none;
     color: #6c5ce7;
 }
 
-/* 🌸 Bouton Envoyer */
 .btn-primary {
     width: 100%;
     padding: 10px;
@@ -71,10 +70,7 @@ h2 {
 
 .btn-primary:hover {
     background: #ff4757;
-}
-
-/* 🌸 Message de confirmation */
-#confirmationMessage {
+}#confirmationMessage {
     font-weight: bold;
     font-size: 16px;
     text-align: center;

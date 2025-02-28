@@ -1,4 +1,4 @@
-/* 🌸 Styles généraux */
+
 body {
     margin: 0;
     padding: 0;
@@ -9,14 +9,14 @@ body {
     min-height: 100vh;
 }
 
-/* 🌸 Conteneur centré */
+
 .container {
     max-width: 400px;
     width: 100%;
     margin: auto;
 }
 
-/* 🌸 Carte du solde */
+
 .balance-card {
     background: linear-gradient(135deg, #ff80ab, #ff4081);
     color: white;
@@ -26,7 +26,7 @@ body {
     box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.4);
 }
 
-/* 🌸 Menu en bas */
+
 .bottom-menu {
     position: fixed;
     bottom: 0;
@@ -37,7 +37,7 @@ body {
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* 🌸 Style des boutons */
+
 .bottom-menu .btn {
     font-size: 18px;
     flex-grow: 1;
