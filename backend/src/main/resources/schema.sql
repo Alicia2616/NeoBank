@@ -19,19 +19,19 @@ CREATE TABLE IF NOT EXISTS compte (
     type_compte ENUM('COURANT', 'EPARGNE', 'PRO', 'JEUNE') NOT NULL,
     solde DOUBLE NOT NULL DEFAULT 0.0,
     utilisateur_id BIGINT NOT NULL,
-    status ENUM('INSTRUCTION', 'VALIDE') NOT NULL DEFAULT 'INSTRUCTION',
+    compte_status ENUM('INSTRUCTION', 'VALIDE') NOT NULL DEFAULT 'INSTRUCTION',
     FOREIGN KEY (utilisateur_id) REFERENCES utilisateur(id) ON DELETE CASCADE
 );
 
--- INSERT INTO utilisateur (nom, prenom, email, telephone, adresse, code_postal, password, role_utilisateur)
--- VALUES
+--INSERT INTO utilisateur (nom, prenom, email, telephone, adresse, code_postal, password, role_utilisateur)
+--VALUES
 --     ('Belkalem', 'Alicia', 'aliciabelkalem@gmail.com', '0123456789',
 --      '27 Rue de la gare, Houilles', '78800',
 --      '$2a$10$FD58FsdQnE5lwEwCYZ/xXuUsQIe.NKVxj31c7FcfpM1aXWBCW/15q', 'CONSEILLER');
---
--- INSERT INTO utilisateur (nom, prenom, email, telephone, adresse, code_postal, password, role_utilisateur)
--- VALUES
+
+--INSERT INTO utilisateur (nom, prenom, email, telephone, adresse, code_postal, password, role_utilisateur)
+--VALUES
 --     ('admin', 'alicia', 'bealicia@etudiant-esic.fr', '0123456788',
 --      '27 Rue de la gare, Houilles', '78800',
---      '$2a$10$FD58FsdQnE5lwEwCYZ/xXuUsQIe.NKVxj31c7FcfpM1aXWBCW/15q', 'ADMIN');
+--     '$2a$10$FD58FsdQnE5lwEwCYZ/xXuUsQIe.NKVxj31c7FcfpM1aXWBCW/15q', 'ADMIN');
 

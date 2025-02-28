@@ -12,7 +12,8 @@ import java.util.Optional;
 public interface CompteRepository extends JpaRepository<Compte, Long> {
 
     List<Compte> findByUtilisateurId(Long utilisateurId);
-    Optional<Compte> findByUtilisateurIdAndType(Long utilisateurId, CompteType type);
+    Optional<Compte> findByUtilisateurIdAndTypeCompte(Long utilisateurId, CompteType type);
+    Optional<Compte> findByIban(String iban);
 
 
 }

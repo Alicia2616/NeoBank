@@ -37,19 +37,20 @@ document.addEventListener("DOMContentLoaded", function() {
             
             const result = await response.json();
 
-            handleResponse(result.message);
-
             if (response.ok && result.succes) {
+                handleResponse(result.message, "acceuil.html");
                 // Optionnel : Redirection automatique après 3 secondes
                 setTimeout(() => {
                     window.location.href = "acceuil.html";
                 }, 5000);
+            } else {
+                handleResponse(result.message, "connexion.html");
             }
 
  
         } catch (error) {
             console.log(error);
-            handleResponse("Une erreur est survenue. Veuillez réessayer plus tard.")
+            handleResponse("Une erreur est survenue. Veuillez réessayer plus tard.", "connexion.html")
         }
 
     });
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    function handleResponse(message) {
+    function handleResponse(message, page) {
         
         // Masque le formulaire et affiche la confirmation
         form.style.display = "none"; // Cache le formulaire
@@ -74,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
         confirmationContainer.innerHTML = `
             <div class="p-4 shadow-lg bg-white rounded">
                 <h2 class="text-success">` + message + `</h2>
-                <a href="acceuil.html" class="btn btn-primary mt-3">Retour à l'accueil</a>
+                <a href="`+page+`" class="btn btn-primary mt-3">Retour à l'accueil</a>
             </div>
         `;
     

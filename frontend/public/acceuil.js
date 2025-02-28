@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
     let solde = document.getElementById("solde");
     let transactionList = document.getElementById("transaction-list");
 

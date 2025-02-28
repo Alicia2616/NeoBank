@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "formulaireInscription.html"));
+    res.sendFile(path.join(__dirname, "public", "connexion.html"));
 });
 
 

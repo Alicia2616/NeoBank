@@ -36,7 +36,7 @@ public class Utilisateur {
 
     @JsonIgnore
     @Enumerated(EnumType.STRING)
-    private Role role;
+    private Role roleUtilisateur;
 
     @OneToMany(mappedBy = "utilisateur", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Compte> comptes;
